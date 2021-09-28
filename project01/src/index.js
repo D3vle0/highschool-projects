@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import App0928 from './App_0928';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <App0928 value="1234" boolvalue={true} />
     </React.StrictMode>,
     document.getElementById('root')
 );
