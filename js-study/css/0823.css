@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  src: url("/assets/font/NanumBarunGothic.ttf");
+}
+
+body {
+  font-family: "NanumBarunGothic";
+}
