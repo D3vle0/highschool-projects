@@ -21,7 +21,7 @@ class App_1005 extends Component {
         // this.loading = false;
         // this.formData = "new new data";
 
-        this.state.loading = false;
+        this.state.loading = false; 
         this.state.formData = "new new data";
 
         // this.setState({
