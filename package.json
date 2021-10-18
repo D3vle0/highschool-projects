@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "query-string": "^7.0.1",
     "react-router-dom": "^5.3.0"
   }
 }
