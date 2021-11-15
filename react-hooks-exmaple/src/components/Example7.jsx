@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 
 function sum(persons) {
     console.log("sum...");
@@ -14,10 +14,10 @@ export default function Example7() {
     ])
 
     // const count = sum(persons);
-    const count = useMemo( () => {
+    const count = useMemo(() => {
         return sum(persons);
-    });
-    return ( 
+    }, [persons]);
+    return (
         <div>
             <input value={value} onChange={change}></input>
             <p>{count}</p>
