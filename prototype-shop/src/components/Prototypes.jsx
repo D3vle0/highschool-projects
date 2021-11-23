@@ -1,15 +1,19 @@
 //상품 리스트 보여주기
 // components/Prototypes.jsx
-import {useContext} from 'react';
 import usePrototypes from '../Hooks/usePrototypes';
+import useActions from '../Hooks/useActions';
 
 export default function Prototypes() {
     const prototypes = usePrototypes();
+    const { addToOrder } = useActions();
     return (
         <main>
-            <div className="prototypes">상품 리스트
+            <div className="prototypes">
                 {prototypes.map((prototype) => {
-                    const { id, thumbnail, title, artist, desc, price, pieUrl } = prototype;
+                    const { id, thumbnail, title, desc, price, pieUrl } = prototype;
+                    const click = () => {
+                        addToOrder(id);
+                    }
                     return (
                         <div className="prototype" key={id}>
                             <a href={pieUrl} target="_BLANK" rel="noreferrer">
@@ -25,7 +29,7 @@ export default function Prototypes() {
                             </a>
                             <div className="prototype__body">
                                 <div className="prototype__title">
-                                    <div className="btn btn--primary float--right">
+                                    <div className="btn btn--primary float--right" onClick={click}>
                                         <i className="icon icon--plus" />
                                     </div>
                                     {title}
