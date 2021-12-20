@@ -7,7 +7,7 @@ export default function Orders() {
     console.log(orders);
 
     const prototypes = usePrototypes();
-    const { remove } = useActions();
+    const { remove, removeAll } = useActions();
     const totalPrice = useMemo(() => {
         return orders.map((order) => {
             const { id, quantity } = order;
@@ -63,6 +63,12 @@ export default function Orders() {
                         <div className="action">
                             <div className="price">$ {totalPrice}</div>
                         </div>
+                        <button className="btn btn--link" onClick={removeAll} style={{display: 'block'}}>
+                            <i className="icon icon--delete" style={{display: 'block'}}></i>
+                        </button><br></br>
+                        <button className="btn btn--secondary" style={{ width: '100%', marginTop: 10, display: 'block' }}>
+                            Checkout
+                        </button>
                     </div>
                 </div>
             </div>
