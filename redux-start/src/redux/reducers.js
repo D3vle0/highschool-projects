@@ -1,4 +1,4 @@
-import { ADD_TODO, COMPLETE_TODO } from './actions';
+import { ADD_TODO, COMPLETE_TODO, SHOW_ALL, SHOW_COMPLETE } from './actions';
 const initialState = [];
 export function todoApp(previousState = initialState, action) {
     if (previousState === undefined)
@@ -12,6 +12,19 @@ export function todoApp(previousState = initialState, action) {
                 return { ...todo, done: true };
             return todo;
         })
+    }
+
+    if (action.type === SHOW_COMPLETE) {
+        return {
+            ...previousState,
+            filter: "COMPLETE",
+        };
+    }
+    if (action.type === SHOW_ALL) {
+        return {
+            ...previousState,
+            filter: "SHOW_ALL",
+        };
     }
     return previousState;
 }
