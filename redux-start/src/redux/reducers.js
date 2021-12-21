@@ -1,17 +1,24 @@
 import { ADD_TODO, COMPLETE_TODO, SHOW_ALL, SHOW_COMPLETE } from './actions';
-const initialState = [];
+const initialState = { todos: [], filter: "ALL" };
 export function todoApp(previousState = initialState, action) {
     if (previousState === undefined)
         return [];
     if (action.type === ADD_TODO) {
-        return [...previousState, { text: action.text, done: false }];
+        return {
+            ...previousState,
+            todos: [...previousState.todos, { text: action.text, done: false }],
+        };
     }
     if (action.type === COMPLETE_TODO) {
-        return previousState.map((todo, index) => {
-            if (index === action.index)
-                return { ...todo, done: true };
-            return todo;
-        })
+        return {
+            ...previousState,
+            todos: previousState.todos.map((todo, index) => {
+                if (index === action.index) {
+                    return { ...todo, done: true };
+                }
+                return todo;
+            }),
+        };
     }
 
     if (action.type === SHOW_COMPLETE) {
