@@ -1,3 +1,3 @@
-# react-study
+# highschool-projects
 
-2학년 2학기 응프
+디미고 전공과목 과제 코드 모음
