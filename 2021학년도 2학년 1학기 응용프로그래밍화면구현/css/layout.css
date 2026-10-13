@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  src: url("../assets/font/NanumBarunGothic.ttf");
+}
+
+body {
+  font-family: "NanumBarunGothic";
+}
+
+#pet1 {
+  border: 3px solid black;
+  border-radius: 20px;
+}
+#pet2 {
+  border: 3px dotted black;
+  border-radius: 20px;
+}
+#pet3 {
+  border: 3px dashed black;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}

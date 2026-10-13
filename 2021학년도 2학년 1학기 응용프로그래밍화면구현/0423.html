@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0423</title>
+</head>
+<style>
+    @font-face {
+        font-family: "NanumBarunGothic";
+        src: url("./assets/font/NanumBarunGothic.ttf");
+    }
+
+    body {
+        font-family: "NanumBarunGothic";
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+
+    input[type="number"]:in-range {
+        border: 1px solid green;
+    }
+
+    input[type="number"]:out-of-range {
+        border: 1px solid red;
+    }
+
+    input[type="button"] {
+        outline: none;
+        font-size: 15px;
+        margin-top: 15px;
+        height: 30px;
+        transition: .3s;
+        text-align: center;
+        display: inline-block;
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-family: 'NanumBarunGothic';
+        background-color: #b7d6ff;
+    }
+
+    input[type="submit"] {
+        outline: none;
+        font-size: 15px;
+        margin-top: 15px;
+        height: 30px;
+        transition: .3s;
+        text-align: center;
+        display: inline-block;
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-family: 'NanumBarunGothic';
+        background-color: #cdb7ff;
+    }
+</style>
+
+<body>
+    <form action="server.php" method="GET">
+        <h2>0423 - input 태그 집중 탐구 #2</h2>
+
+        <h3>radio</h3>
+        국어: <input type="radio" name="radio1" id="" value="ko"><br>
+        영어: <input type="radio" name="radio1" id="" value="en"><br>
+        수학: <input type="radio" name="radio1" id="" value="ma"><br>
+        과학: <input type="radio" name="radio1" id="" value="sc"><br>
+        <input type="button" value="일반과목 값 체크" onclick="chk();">
+        <hr>
+        <h3>checkbox</h3>
+        응프: <input type="checkbox" name="chk2" id="" value="ad"><br>
+        정통: <input type="checkbox" name="chk2" id="" value="ic"><br>
+        빅데: <input type="checkbox" name="chk2" id="" value="bd"><br>
+        정보: <input type="checkbox" name="chk2" id="" value="se"><br>
+        <hr>
+        <h3>color picker</h3>
+        <input type="color" name="" id="color"><br>
+        <input type="button" value="색상 값 체크" onclick="alert(document.getElementById('color').value)">
+        <hr>
+        <h3>date</h3>
+        <input type="date" id="date"><br>
+        <input type="month" id="month"><br>
+        <input type="week" id="week"><br>
+        <input type="button" value="주 값 체크" onclick="alert(document.getElementById('week').value)">
+        <hr>
+        <h3>number + range styling</h3>
+        <input type="number" min="1" max="5"><br>
+        <hr>
+        <h3>time</h3>
+        <input type="time" name="" id="time">
+        <input type="datetime" name="" id="datetime" value="datetime은 지원종료!">
+        <input type="datetime-local" name="" id="datetime-local"><br>
+        <input type="button" value="time 값 체크" onclick="alert(document.getElementById('time').value)">
+        <input type="button" value="datetime 값 체크" onclick="alert(document.getElementById('datetime').value)">
+        <input type="button" value="datetime-local 값 체크"
+            onclick="alert(document.getElementById('datetime-local').value)">
+        <hr>
+        <h3>file</h3>
+        <input type="file" name="" id="file"><br>
+        <input type="button" value="file 값 체크" onclick="alert(document.getElementById('file').value)">
+        <hr>
+        <h3>form submit</h3>
+        <input type="submit" value="서버 전송">
+        <input type="image" alt="" id="imagebutton" src="./assets/img/benedu.png" width="50">
+    </form>
+    <hr>
+    <h2>note</h2>
+    <img src="./assets/img/fake.png" width="300px">
+    <p>보안상의 이유로 파일 경로는 숨겨진다.</p>
+</body>
+<script>
+    function chk() {
+        const obj = document.getElementsByName("radio1")
+        for (var i = 0; i <= obj.length; i++) {
+            alert(`${obj[i].value}: ${obj[i].checked}`)
+        }
+        alert(obj.length);
+    }
+    function color_chk() {
+
+    }
+</script>
+
+</html>

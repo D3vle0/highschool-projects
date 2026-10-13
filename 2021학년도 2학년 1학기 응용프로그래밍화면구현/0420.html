@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style type="text/css">
+    @font-face {
+        font-family: "NanumBarunGothic";
+        src: url("./assets/font/NanumBarunGothic.ttf");
+    }
+    
+    body {
+        font-family: "NanumBarunGothic";
+    }
+
+    input {
+        margin-bottom: 1rem;
+    }
+</style>
+
+<body>
+    <h1>실습</h1>
+    <form>
+        <input type="hidden" id="hddTextField" value="1"><br>
+        <label>이름: <input type="text" id="txtTextbox1" size="50" maxlength="10"></label><br>
+        <label>패스워드: <input type="password" id="txtPwd" size="50" maxlength="10"></label><br>
+        <label>찾기: <input type="search" size="50"></label><br>
+        <label>URL: <input type="url" name="" id="" size="50"></label><br>
+        <label>email: <input type="email" name="" id="" size="50"></label><br>
+        <label>tel: <input type="tel" name="" id="" size="50"></label><br>
+        <label>number: <input type="number" name="" id="" onkeyup="fn_chkval(this)" min="1" max="34"></label><br>
+
+        <input type="range" name="slider" for="result" oninput="result.value=slider.value">
+        <input class="result" name="result" for="slier" oninput="slider.value=result.value"><br>
+
+        <input type="submit" value="폼 전송">
+        <input type="button" value="클릭이다" onclick="fn_evt();">
+    </form>
+    <h1>note</h1>
+    <p>지역마다 전화번호 형식이 다르기 때문에 tel validation은 없음!!</p>
+</body>
+<script>
+    function fn_evt() {
+        const id = document.getElementById("txtTextbox1").value;
+        const pw = document.getElementById("txtPwd").value;
+        alert(`ID: ${id}\nPW: ${pw}`);
+    }
+    function fn_chkval(v) {
+        alert(v.max)
+    }
+    function range(v) {
+        alert(v)
+    }
+</script>
+
+</html>

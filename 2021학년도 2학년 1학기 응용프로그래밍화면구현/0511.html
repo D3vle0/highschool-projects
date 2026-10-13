@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0511 - CSS 집중분석</title>
+</head>
+<style>
+    @font-face {
+        font-family: "NanumBarunGothic";
+        src: url("./assets/font/NanumBarunGothic.ttf");
+    }
+
+    a:visited {
+        color: green;
+    }
+
+    a:active {
+        color: red;
+    }
+
+    a:hover {
+        color: pink;
+    }
+
+    body {
+        /* color: blue; */
+        font-family: "NanumBarunGothic";
+    }
+
+    h2 {
+        color: brown !important;
+    }
+
+    /* li {
+        color: red;
+    } */
+
+    #tree>li {
+        border: 1px solid red;
+    }
+
+    .shadow1 {
+        color: orange;
+        text-shadow: 1px 1px;
+    }
+
+    .shadow2 {
+        text-shadow: 5px 5px 3px #f00;
+    }
+
+    .shadow3 {
+        color: #fff;
+        text-shadow: 7px -7px 5px #000;
+    }
+</style>
+
+<body>
+    <h1>0511 - CSS 집중분석</h1>
+    <a href="0430.html">OK</a><br>
+    <a href="0427.html">not OK</a>
+    <div id="container">
+        <h2 style="color: green;">이지스퍼블리싱의 미션</h2>
+        <p>사람에게 구체적으로 도움을 주는 책, <br>
+            우리는 열심히 사는 사람들에게 도움이 되고 싶습니다.<br></p>
+        <p style="font-style: oblique;">우리는 책을 출간하기 전에 질문할 것입니다.</p>
+        <p style="color: red; font-style: italic;">"이 책이 사람들에게 도움이 됩니까?"</p>
+    </div>
+    <ul>
+        <li>개나리</li>
+        <li>민들레</li>
+        <li>벚꽃</li>
+    </ul>
+    <ol id="tree">
+        <li>버드나무</li>
+        <li>느티나무</li>
+        <li>소나무</li>
+    </ol>
+    <h3 class="shadow1">HTML5</h3>
+    <h3 class="shadow2">HTML5</h3>
+    <h3 class="shadow3">HTML5</h3>
+</body>
+
+</html>

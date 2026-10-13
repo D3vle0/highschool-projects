@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: "NanumBarunGothic";
+        src: url("./assets/font/NanumBarunGothic.ttf");
+    }
+
+    body {
+        font-family: "NanumBarunGothic";
+    }
+</style>
+
+<body>
+    <map name="img1">
+        <area shape="rect" coords="10,11,236,239" onclick="alert(1)" alt="">
+        <area shape="rect" coords="249,7,489,238" onclick="alert(2)" alt="">
+        <area shape="circle" coords="94,360,35" onclick="alert(3)" alt="">
+    </map>
+    <img src="./assets/img/cartoon.png" alt="" usemap="#img1"><br>
+    <label for="" id="id" runat="server">ID: </label><br>
+    <label for="" id="pw">PW: </label><br>
+    <fieldset>
+        <legend>국가1</legend>
+        <input type="radio" name="rdo1"> 영어
+        <input type="radio" name="rdo2"> 중국어 <br>
+    </fieldset>
+    <fieldset>
+        <legend>국가2</legend>
+        <label><input type="radio" name="rdo3"> 일본어 </label>
+        <label><input type="radio" name="rdo4"> 러시아어 <br></label>
+    </fieldset>
+    아이디: <br>
+    패스워드: <br>
+</body>
+
+</html>

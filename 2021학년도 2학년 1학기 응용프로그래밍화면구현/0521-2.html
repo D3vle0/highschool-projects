@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0521-2 - 테두리 속성</title>
+</head>
+<style>
+    @font-face {
+        font-family: "NanumBarunGothic";
+        src: url("./assets/font/NanumBarunGothic.ttf");
+    }
+
+    body {
+        font-family: "NanumBarunGothic";
+    }
+
+    div {
+        display: inline-block;
+        width: 200px;
+        height: 150px;
+    }
+
+    .box1 {
+        border-style: solid;
+        border-width: 10px;
+        border-color: red;
+        border-radius: 10px;
+    }
+
+    .box2 {
+        border-style: dotted;
+    }
+
+    .box3 {
+        border-style: dashed;
+    }
+
+    .test {
+        border: 3px solid red;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: yellow;
+        box-shadow: 5px 10px 10px #aaaaaa;
+    }
+</style>
+
+<body>
+    <h1>0521-2 - 테두리 속성</h1>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div><br><br>
+    <div class="test"><p>실습</p></div>
+</body>
+
+</html>

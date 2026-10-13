@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0427 - input 태그의 기타 속성</title>
+</head>
+<style>
+    @font-face {
+        font-family: "NanumBarunGothic";
+        src: url("./assets/font/NanumBarunGothic.ttf");
+    }
+
+    body {
+        font-family: "NanumBarunGothic";
+    }
+
+    input {
+        margin-bottom: 1rem;
+    }
+
+    input[type="submit"],
+    button {
+        outline: none;
+        font-size: 15px;
+        margin-top: 15px;
+        height: 30px;
+        transition: .3s;
+        text-align: center;
+        display: inline-block;
+        border: 2px solid #cccccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-family: 'NanumBarunGothic';
+        background-color: #cdb7ff;
+    }
+
+    input[type="submit"]:hover,
+    button:hover {
+        background-color: #bba5ec;
+    }
+</style>
+
+<body>
+    <h1>0427 - input 태그의 기타 속성</h1>
+    <form action="">
+        아이디: <input type="text" placeholder="아이디를 입력하세요." autofocus minlength="4"><br>
+        패스워드: <input type="password" placeholder="비밀번호를 입력하세요." minlength="4"><br>
+        이름: <input type="text" required size="30" maxlength="5" minlength="2"><br>
+        리드온리: <input type="text" readonly value="읽기만 가능"><br>
+
+        <h3>일반적인 drop down</h3>
+        <select>
+            <optgroup label="토종과일">
+                <option value="f01">수박</option>
+                <option value="f02" selected>포도</option>
+                <option value="f03">복숭아</option>
+                <option value="f04">사과</option>
+                <option value="f05">딸기</option>
+            </optgroup>
+            <optgroup label="수입과일">
+                <option value="f06">바나나</option>
+                <option value="f07">두리안</option>
+                <option value="f08">키위</option>
+                <option value="f09">리치</option>
+                <option value="f10">망고</option>
+            </optgroup>
+        </select><br>
+
+        <h3>스크롤 가능한 drop down</h3>
+        <select size="2">
+            <option>수박</option>
+            <option>포도</option>
+            <option>복숭아</option>
+            <option>사과</option>
+            <option>딸기</option>
+        </select><br>
+
+        <h3>multiple drop down</h3>
+        <select size="5" multiple>
+            <option>수박</option>
+            <option selected>포도</option>
+            <option>복숭아</option>
+            <option>사과</option>
+            <option>딸기</option>
+        </select><br>
+
+        <h3>datalist</h3>
+        <input type="text" list="aaaa">
+        <datalist id="aaaa">
+            <option value="food1">라면</option>
+            <option value="food2">떡볶이</option>
+            <option value="food3">순대</option>
+            <option value="food4">튀김</option>
+            <option value="food5">오뎅</option>
+            <option value="food6">민트초코</option>
+        </datalist>
+        <br>
+
+        <h3>textarea</h3>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="폼 제출">
+        <button type="reset">폼 리셋</button>
+    </form>
+
+    <h3>form 연산</h3>
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" name="num1" value="0"> + 
+        <input type="number" name="num2" value="0"> = 
+        <output name="result" for="num"></output>
+    </form><br>
+
+    <h3>progress</h3>
+    <progress value="3" max="10"></progress>
+</body>
+
+</html>

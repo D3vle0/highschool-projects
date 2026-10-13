@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sample {
+            width: 70%;
+            border: 1px solid #222;
+            border-collapse: collapse;
+        }
+
+        .sample>thead {
+            background: #eee;
+        }
+
+        .sample>thead>tr>th,
+        .sample>tbody>tr>td {
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 0.8em;
+        }
+
+        @font-face {
+            font-family: "NanumBarunGothic";
+            src: url("./assets/font/NanumBarunGothic.ttf");
+        }
+
+        body {
+            font-family: "NanumBarunGothic";
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>aaaaa</th>
+            <th>bbbbb</th>
+        </tr>
+        <tr>
+            <td colspan="2">11111</td>
+            <!-- <td>22222</td> -->
+        </tr>
+        <tr>
+            <td>33333</td>
+            <td rowspan="2">44444</td>
+        </tr>
+        <tr>
+            <td>55555</td>
+            <!-- <td>66666</td> -->
+        </tr>
+    </table>
+    <img src="./assets/img/benedu.png" alt="" width="100">
+    <section>
+        <h2 class="subtitle">Education</h2>
+        <table class="sample">
+            <caption>학력사항</caption>
+            <thead>
+                <tr>
+                    <th>출신학교</th>
+                    <th>전공</th>
+                    <th>기간</th>
+                    <th>구분</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ㅁㅁ대학교</td>
+                    <td>컴공</td>
+                    <td>2022.~2026.</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>디미고등학교</td>
+                    <td>문과</td>
+                    <td>2019.~2021.</td>
+                    <td>졸업</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>
