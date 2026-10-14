@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Devleo Gaming</title>
+</head>
+
+<body>
+    <ul class="navbar">
+        <img src="/svg/keyboard.svg" height="40px" class="logo">
+        <li><a class="title" href="/">Devleo Gaming</a></li>
+        <% if (login) { %>
+            <li><a href="/logout" class="nav-btn">Logout</a></li>
+            <% } else { %>
+                <li><a href="/login" class="nav-btn">Login</a></li>
+                <% } %>
+                    <li><a href="/products" class="nav-btn">Products</a></li>
+    </ul>
+    <div class="products-layout">
+        <h1 id="tech">Keyboard</h1>
+        <div class="products-container">
+            <div class="product">
+                <a href="/k1001">
+                    <img src="/svg/k1001.svg" alt="" width="200px">
+                </a>
+                <p>K1001</p>
+            </div>
+            <div class="product">
+                <a href="/k1002">
+                    <img src="/svg/k1002.svg" alt="" width="200px">
+                </a>
+                <p>K1002</p>
+            </div>
+            <div class="product">
+                <a href="/k1003">
+                    <img src="/svg/k1003.svg" alt="" width="200px">
+                </a>
+                <p>K1003</p>
+            </div>
+            <div class="product">
+                <a href="/k1004">
+                    <img src="/svg/k1004.svg" alt="" width="200px">
+                </a>
+                <p>K1004</p>
+            </div>
+            <div class="product">
+                <a href="/k1005">
+                    <img src="/svg/k1005.svg" alt="" width="200px">
+                </a>
+                <p>K1005</p>
+            </div>
+        </div>
+        <hr class="hr1">
+        <h1 id="tech">Mouse</h1>
+        <div class="products-container">
+            <div class="product">
+                <a href="/m2001">
+                    <img src="/svg/m2001.svg" alt="" width="150px">
+                </a>
+                <p>M2001</p>
+            </div>
+            <div class="product">
+                <a href="/m2002">
+                    <img src="/svg/m2002.svg" alt="" width="150px">
+                </a>
+                <p>M2002</p>
+            </div>
+            <div class="product">
+                <a href="/m2003">
+                    <img src="/svg/m2003.svg" alt="" width="150px">
+                </a>
+                <p>M2003</p>
+            </div>
+            <div class="product">
+                <a href="/m2004">
+                    <img src="/svg/m2004.svg" alt="" width="150px">
+                </a>
+                <p>M2004</p>
+            </div>
+            <div class="product">
+                <a href="/m2005">
+                    <img src="/svg/m2005.svg" alt="" width="150px">
+                </a>
+                <p>M2005</p>
+            </div>
+            <hr class="hr1">
+            <h1 id="tech">Gaming LED Strip</h1>
+            <div class="products-container">
+                <div class="product">
+                    <a href="/l3001">
+                        <img src="/svg/l3001.svg" alt="" width="150px">
+                    </a>
+                    <p>L3001</p>
+                </div>
+                <div class="product">
+                    <a href="/l3002">
+                        <img src="/svg/l3002.svg" alt="" width="150px">
+                    </a>
+                    <p>L3002</p>
+                </div>
+                <div class="product">
+                    <a href="/l3003">
+                        <img src="/svg/l3003.svg" alt="" width="150px">
+                    </a>
+                    <p>L3003</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+</body>
+
+</html>

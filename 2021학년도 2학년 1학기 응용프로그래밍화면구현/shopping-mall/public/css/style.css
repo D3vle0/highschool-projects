@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  z-index: 1;
+  font-family: "Noto Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #454545c5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.title {
+  float: left;
+}
+
+li a:hover:not(.active) {
+  background-color: rgba(148, 148, 148, 0.158);
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+.nav-btn {
+  float: right;
+}
+
+/* .bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height: 700px;
+    padding: 20px;
+    text-align: center;
+  } */
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-title {
+  font-size: 70px;
+  font-family: "Staatliches", cursive;
+  margin-top: -50px;
+}
+
+.img-subtitle {
+  margin-top: -60px;
+  font-size: 30px;
+  font-family: "Staatliches", cursive;
+}
+
+.learn-more {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #a852ff 20%, #39a0ff 100%);
+  border: 0;
+  border-radius: 95px;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  font-family: "Staatliches", cursive;
+  margin-top: 50px;
+}
+
+.bg-layout {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+#tech {
+  margin-top: 100px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.introduce {
+  height: 150px;
+  width: 450px;
+  display: inline-block;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  margin-top: 70px;
+  background-color: #81acff;
+  display: flex;
+  border-radius: 100px;
+  float: left;
+}
+
+.circle:hover {
+  box-shadow: 5px 5px 15px rgb(172, 172, 172);
+  transition: 0.2s;
+}
+
+.inner-logo {
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
+  float: left;
+}
+
+.tech-skill-title {
+  margin-top: 100px;
+  font-size: 25px;
+}
+
+.tech1 {
+  position: relative;
+  margin-left: 200px;
+}
+
+.introduce2 {
+  height: 150px;
+  width: 450px;
+  display: inline-block;
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 10%;
+  margin-bottom: 70px;
+}
+
+.hr1 {
+  margin-top: 100px;
+  max-width: 500px;
+}
+
+.products-container {
+  margin: 0 auto;
+}
+
+.product {
+  text-align: center;
+  display: inline-block;
+  margin: 0px 70px 0px 0px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.product:hover {
+  box-shadow: 5px 5px 15px rgb(172, 172, 172);
+  transition: 0.3s;
+}
+
+.product-more {
+  background: #81acff;
+  border: 0;
+  border-radius: 95px;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  font-family: "Staatliches", cursive;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+footer {
+  width: 100vw;
+  height: 100px;
+  background-color: #2b2b2b;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 50px 0px 0px 0px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.products-layout {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.login-container {
+  font-family: "Staatliches", cursive;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  max-width: 700px;
+  height: 650px;
+  background: #f1f1f1 no-repeat;
+  background: -moz-linear-gradient(
+      top,
+      #f1f1f1 0%,
+      rgba(234, 234, 234, 0.555) 100%
+    )
+    no-repeat;
+  background: -webkit-linear-gradient(
+      top,
+      #f1f1f1 0%,
+      rgba(234, 234, 234, 0.555) 100%
+    )
+    no-repeat;
+  background: linear-gradient(
+      to bottom,
+      #f1f1f1 0%,
+      rgba(234, 234, 234, 0.555) 100%
+    )
+    no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='rgba(234, 234, 234, 0.555)',GradientType=0 );
+}
+
+.login-input {
+  outline: none;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 60%;
+  height: 40px;
+  transition: 0.3s;
+  display: inline-block;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+
+.register-input {
+  outline: none;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 60%;
+  height: 40px;
+  transition: 0.3s;
+  display: inline-block;
+  border: 2px solid #cccccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+
+.detail-layout {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.product-detail {
+  margin-top: 100px;
+}
+
+.product-detail > h1 {
+  display: inline-block;
+  position: relative;
+  top: -75px;
+  margin-left: 250px;
+}
+
+.option {
+  margin-top: 20px;
+}
+
+.options p {
+  font-size: 25px;
+  display: inline-block;
+}
+
+.option-btn {
+  background: #81acff;
+  border: 0;
+  border-radius: 95px;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  font-family: "Staatliches", cursive;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Devleo Gaming</title>
+</head>
+<style>
+    body {
+        background: #6c9eff;
+        background: -moz-linear-gradient(-45deg, #6c9eff 0%, #aeffd8 100%);
+        background: -webkit-linear-gradient(-45deg, #6c9eff 0%, #aeffd8 100%);
+        background: linear-gradient(135deg, #6c9eff 0%, #aeffd8 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c9eff', endColorstr='#aeffd8', GradientType=1);
+    }
+</style>
+
+<body>
+    <div class="login-container">
+        <h1 style="padding-top: 100px; font-size: 48px;">REGISTER</h1>
+        <form action="/register" method="POST">
+            <input type="text" class="register-input" required placeholder="ID" name="id">
+            <input type="text" class="register-input" required placeholder="Email" name="email">
+            <input type="password" class="register-input" required placeholder="PW" name="pw">
+            <input type="password" class="register-input" required placeholder="Retype PW" name="repw">
+            <input type="text" class="register-input" required placeholder="Credit Card NUM" name="card"><br><br>
+            <input type="checkbox" name="check" id="check" required>
+            <label for="check" style="font-size: 20px;">I have read and accept the terms and conditions.</label><br>
+            <input type="submit" class="learn-more" value="Submit">
+            <p style="color: red; font-size: 20px;"><%= err %></p>
+        </form>
+    </div>
+</body>
+
+</html>

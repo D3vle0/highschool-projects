@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Devleo Gaming</title>
+</head>
+
+<body>
+    <ul class="navbar">
+        <img src="/svg/keyboard.svg" height="40px" class="logo">
+        <li><a class="title" href="/">Devleo Gaming</a></li>
+        <% if (login) { %>
+            <li><a href="/logout" class="nav-btn">Logout</a></li>
+        <% } else { %>  
+            <li><a href="/login" class="nav-btn">Login</a></li>
+        <% } %>
+        <li><a href="/products" class="nav-btn">Products</a></li>
+    </ul>
+    <div class="container">
+        <img src="/img/gaming.jpeg" alt="" style="width:100%;height:100vh;object-fit:cover;">
+        <div class="centered">
+            <p class="img-title">VICTORY IS <%= name %></p>
+            <p class="img-subtitle">FEEL THE SPEED WITH DEVLEO GAMING</p>
+            <a href="#tech"><button class="learn-more">LEARN MORE</button></a>
+        </div>
+    </div>
+    <div class="bg-layout">
+        <h1 id="tech">Technology</h1>
+        <div class="introduce tech-box">
+            <div class="circle">
+                <div class="inner-logo" style="top: 35px;">
+                    <img src="/svg/tech-keyboard.svg" alt="" width="70px">
+                </div>
+            </div>
+            <div class="tech1">
+                <p class="tech-skill-title">Ultimate Speed</p>
+                <p class="tech-skill">Extremely short keystrokes</p>
+            </div>
+        </div>
+        <div class="introduce2 tech-box">
+            <div class="circle">
+                <div class="inner-logo">
+                    <img src="/svg/light.svg" alt="" width="70px">
+                </div>
+            </div>
+            <div class="tech1">
+                <p class="tech-skill-title">More Colorful</p>
+                <p class="tech-skill">16M colors, 500 nits brightness</p>
+            </div>
+        </div>
+        <div class="introduce tech-box">
+            <div class="circle">
+                <div class="inner-logo">
+                    <img src="/svg/mouse.svg" alt="" width="70px">
+                </div>
+            </div>
+            <div class="tech1">
+                <p class="tech-skill-title">High durability</p>
+                <p class="tech-skill">Completed 100M click test</p>
+            </div>
+        </div>
+        <div class="introduce2 tech-box">
+            <div class="circle">
+                <div class="inner-logo">
+                    <img src="/svg/iot.svg" alt="" width="70px">
+                </div>
+            </div>
+            <div class="tech1">
+                <p class="tech-skill-title">True wireless IoT</p>
+                <p class="tech-skill">Control your devices anywhere</p>
+            </div>
+        </div>
+        <hr class="hr1">
+        <div class="our-products">
+            <h1 id="tech">Our Products</h1>
+            <div class="products-container">
+                <div class="product">
+                    <img src="/svg/k1001.svg" alt="">
+                    <p>K1001</p>
+                </div>
+                <div class="product">
+                    <img src="/svg/m2003.svg" alt="">
+                    <p>M2003</p>
+                </div>
+                <div class="product">
+                    <img src="/svg/l3002.svg" alt="">
+                    <p>L3002</p>
+                </div>
+            </div>
+            <a href="/products"><button class="product-more">All products</button></a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2021 Devleo All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

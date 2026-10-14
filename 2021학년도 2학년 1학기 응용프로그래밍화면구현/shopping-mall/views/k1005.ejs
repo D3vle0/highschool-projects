@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Devleo Gaming</title>
+</head>
+
+<body>
+    <ul class="navbar">
+        <img src="/svg/keyboard.svg" height="40px" class="logo">
+        <li><a class="title" href="/">Devleo Gaming</a></li>
+        <% if (login) { %>
+            <li><a href="/logout" class="nav-btn">Logout</a></li>
+        <% } else { %>  
+            <li><a href="/login" class="nav-btn">Login</a></li>
+        <% } %>
+        <li><a href="/products" class="nav-btn">Products</a></li>
+    </ul>
+    <div class="detail-layout">
+        <div class="product-detail">
+            <img src="/svg/k1005.svg" alt="" width="400px">
+            <h1>K1005 keyboard</h1>
+            <p>Limited Edition, Customized keycaps</p>
+        </div>
+        <hr class="hr1">
+        <div class="options">
+            <div class="option" style="margin-top: 100px;">
+                <p>Pink (Devleo Mint)</p>
+                <a href=""><button class="option-btn" style="margin-left: 150px;">$89.00</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
